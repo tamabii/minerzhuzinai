@@ -1,0 +1,19 @@
+{
+  "name": "zhenzhu-miner",
+  "version": "1.0.0",
+  "description": "Pearl Coin (珍珠币) PoW miner for BNB Smart Chain, with reward sweeping to a single payout wallet",
+  "main": "miner.js",
+  "scripts": {
+    "start": "node miner.js",
+    "ui": "node ui.js",
+    "check": "node --check miner.js && node --check ui.js && node --check pow.js && node --check chain.js && node --check sweep.js && node --check wallets.js && node --check notify.js && node --check logger.js && node --check config.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0",
+    "js-sha3": "^0.9.0"
+  }
+}
